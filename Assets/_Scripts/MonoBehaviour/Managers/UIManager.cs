@@ -14,7 +14,7 @@ public class UIManager : StaticInstance<UIManager>
     public TextMeshProUGUI oxygenText;
     public TextMeshProUGUI yearsText;
 
-    private int currentRate;
+    private float currentRate;
     PlayerStats playerStats;
 
     // Start is called before the first frame update
@@ -31,7 +31,7 @@ public class UIManager : StaticInstance<UIManager>
         seedCountText.text = playerStats.seedCount.ToString();
         fertilityText.text = playerStats.fertility.ToString();
         oxygenText.text = playerStats.oxygen.ToString();
-        yearsText.text = Math.Floor(playerStats.years).ToString();
+        yearsText.text = playerStats.years.ToString();
         CalculateYearLeft();
         if(GameManager.Instance.PlayerStats.years == 0) {
             GameManager.Instance.EndGame();
@@ -42,10 +42,10 @@ public class UIManager : StaticInstance<UIManager>
     {
         if (currentRate <= 0)
         {
-            GameManager.Instance.PlayerStats.years -= 1 * Time.deltaTime;
+            GameManager.Instance.PlayerStats.years -= 1;
             currentRate = playerStats.yearRate;
         }
         else
-            currentRate--;
+            currentRate -= 1 * Time.deltaTime;
     }
 }
