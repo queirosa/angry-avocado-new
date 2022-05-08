@@ -8,7 +8,7 @@ public class PlayerStats : ScriptableObject
 {
     [Header("Years")]
     [Range(0, 10000)]
-    public int years;
+    public float years;
     [Range(0, 10000)]
     public int maxYears;
     [Range(0, 10000)]

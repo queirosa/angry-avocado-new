@@ -31,15 +31,18 @@ public class UIManager : StaticInstance<UIManager>
         seedCountText.text = playerStats.seedCount.ToString();
         fertilityText.text = playerStats.fertility.ToString();
         oxygenText.text = playerStats.oxygen.ToString();
-        yearsText.text = playerStats.years.ToString();
+        yearsText.text = Math.Floor(playerStats.years).ToString();
         CalculateYearLeft();
+        if(GameManager.Instance.PlayerStats.years == 0) {
+            GameManager.Instance.EndGame();
+        }
     }
 
     private void CalculateYearLeft()
     {
         if (currentRate <= 0)
         {
-            GameManager.Instance.PlayerStats.years--;
+            GameManager.Instance.PlayerStats.years -= 1 * Time.deltaTime;
             currentRate = playerStats.yearRate;
         }
         else

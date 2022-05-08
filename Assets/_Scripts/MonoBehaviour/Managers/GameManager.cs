@@ -18,4 +18,8 @@ public class GameManager : StaticInstance<GameManager>
     {
         
     }
+
+    public void EndGame() {
+        Debug.Log("Game has ended");
+    }
 }
