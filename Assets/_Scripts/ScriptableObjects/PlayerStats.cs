@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PlayerStats", menuName = "ScriptableObjects/PlayerStats", order = 1)]
@@ -25,6 +26,7 @@ public class PlayerStats : ScriptableObject
     public int seedCount;
     [Range(0, 10000)]
     public int maxSeedCount;
+    public List<Seed> avalibleSeeds;
 
     [Header("Oxygen")]
     [Range(0, 10000)]
@@ -45,7 +47,10 @@ public class PlayerStats : ScriptableObject
     public int numberOfActiveDrones;
 
 
-
+    private void OnEnable()
+    {
+        seedCount = avalibleSeeds.Sum(x => x.Quantity);
+    }
 
     public void AddYears(int yearsToAdd)
     {
@@ -61,7 +66,7 @@ public class PlayerStats : ScriptableObject
 
     public void AddWater(int waterToAdd)
     {
-        if (years + waterToAdd <= maxWater)
+        if (water + waterToAdd <= maxWater)
         {
             water += waterToAdd;
         }
@@ -73,7 +78,7 @@ public class PlayerStats : ScriptableObject
 
     public void AddOxygen(int oxygenToAdd)
     {
-        if (years + oxygenToAdd <= maxOxygen)
+        if (oxygen + oxygenToAdd <= maxOxygen)
         {
             oxygen += oxygenToAdd;
         }
@@ -85,7 +90,7 @@ public class PlayerStats : ScriptableObject
 
     public void AddFertility(int fertilityToAdd)
     {
-        if (years + fertilityToAdd <= maxYears)
+        if (fertility + fertilityToAdd <= maxYears)
         {
             fertility += fertilityToAdd;
         }

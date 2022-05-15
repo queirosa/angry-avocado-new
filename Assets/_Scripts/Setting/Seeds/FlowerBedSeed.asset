@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e1f72bfa096b74687fe900a79cb45a, type: 3}
+  m_Name: FlowerBedSeed
+  m_EditorClassIdentifier: 
+  seedName: Flower Bed
+  Quantity: 4
+  seedPrefab: {fileID: 4165922058971891998, guid: bde3e21e4783c65479d480cd17221ca2, type: 3}
+  seedType: 2
+  timeSpan: 0
+  watterNeed: 0
+  oxygenPreduce: 0
+  fertility: 0
+  materials: 0
