@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1365248280269417058}
-  m_Layer: 0
+  - component: {fileID: -4729823018642215416}
+  m_Layer: 7
   m_Name: fruit1
-  m_TagString: Untagged
+  m_TagString: Seed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +33,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4729823018642215416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365248280269417057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40dab742d278caa4fa233d3639edcee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Seed: {fileID: 11400000, guid: cc06395853db92c4b91ac205eaa07e3c, type: 2}
 --- !u!1 &6073306287766080195
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,7 +57,7 @@ GameObject:
   - component: {fileID: 7454237711077009687}
   - component: {fileID: 6409834250726919692}
   - component: {fileID: 6831533848469699407}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fruit1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

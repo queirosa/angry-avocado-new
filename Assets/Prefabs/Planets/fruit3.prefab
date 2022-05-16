@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7746171052171107300}
   - component: {fileID: 675163762757192353}
   - component: {fileID: 3409404030568228083}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fruit3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4986909997343075729}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fruit3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

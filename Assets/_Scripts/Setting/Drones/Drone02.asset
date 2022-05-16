@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Drone02
   m_EditorClassIdentifier: 
   Effectiveness: 1
-  currentWater: 0
+  currentWater: 10000
   waterPerYear: 100
-  maxAmountOfWater: 1000
+  maxAmountOfWater: 10000
+  isWorking: 1
+  WorkingText: 'Gathering Water : 3000'
+  currentJob: 1

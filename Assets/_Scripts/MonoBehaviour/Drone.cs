@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using static GameManager;
 
 public class Drone : MonoBehaviour
@@ -35,9 +36,25 @@ public class Drone : MonoBehaviour
             Debug.Log("Base");
             GameManager.Instance.PlayerStats.AddWater(drone.currentWater);
             drone.currentWater = 0;
+            drone.isWorking = false;
+            drone.currentJob = CurrentJob.Idle;
+        }
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Seed"))
+        {
+            Debug.Log("Seed");
+            Seed seed = other.gameObject.GetComponent<Seed>();
+            GameManager.Instance.PlayerStats.water -= seed.watterNeed;
+            GameManager.Instance.PlayerStats.fertility -= seed.fertility;
+            other.gameObject.GetComponentInParent<Renderer>().material = GameManager.Instance.WaterdMat;
+            GameManager.Instance.GoToBase(this.gameObject);
+            drone.isWorking = false;
+            drone.currentJob = CurrentJob.Idle;
         }
     }
-
     //private void OnDestroy()
     //{
     //    GameManager.Instance.drones.Remove(this.gameObject);

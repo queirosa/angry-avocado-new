@@ -43,12 +43,16 @@ public class GridManager : StaticInstance<GridManager>
                             {
                                 //var dist = Vector3.Distance(GameManager.Instance.currentDrone.transform.position, transform.position);
                                 //Debug.Log(dist);
+                                GameManager.Instance.currentDrone.GetComponent<Drone>().drone.isWorking = true;
                                 GameManager.Instance.currentDrone.GetComponent<NavMeshAgent>().SetDestination(hit.collider.gameObject.transform.position);
                                 GameManager.Instance.PlayerStats.seedCount -= 1;
                                 seed.Quantity -= 1;
                                 GameObject Plant = Instantiate(seed.seedPrefab, hit.collider.gameObject.transform.position, Quaternion.identity);
                                 Plant.transform.parent = hit.collider.gameObject.transform;
                                 Tile.hasPlante = true;
+                                GameManager.Instance.currentDrone.GetComponent<Drone>().drone.currentJob = CurrentJob.Plante;
+                                GameManager.Instance.currentDrone.GetComponent<Drone>().drone.WorkingText = "Growing " + Plant.name;
+                                UIManager.Instance.ActiveWorkingPanle();
                                 CancleGrow();
                             }
                             else CancleGrow();

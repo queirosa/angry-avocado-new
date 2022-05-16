@@ -1,0 +1,671 @@
+fileFormatVersion: 2
+guid: aac2c1a4935b14a409835b8bea9b5b69
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'RightUpperLeg' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: ROBO(Clone)
+      parentName: 
+      position: {x: -0.7589554, y: 0.08283284, z: 0.04440899}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__Bot
+      parentName: ROBO(Clone)
+      position: {x: -0, y: -0.0018153191, z: 0}
+      rotation: {x: 0, y: 0.24370152, z: -0, w: 0.9698503}
+      scale: {x: 0.4547448, y: 0.4547448, z: 0.4547448}
+    - name: Robot_Model1:Weight_Support
+      parentName: pasted__Bot
+      position: {x: -0.00029051935, y: -0.06467919, z: -0.020170221}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.2321649, y: 0.51364183, z: 0.94401723}
+    - name: Robot_Model1:Torso
+      parentName: pasted__Bot
+      position: {x: -0.0003255434, y: -0.053774107, z: -0.021001274}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.1023738, y: 1.1023738, z: 1.1023738}
+    - name: Robot_Model1:Back_Panel
+      parentName: Robot_Model1:Torso
+      position: {x: -1.2085443e-17, y: 0.078752264, z: -0.053654507}
+      rotation: {x: 0.010329007, y: -0, z: -0, w: 0.99994665}
+      scale: {x: 1.0621746, y: 1.0621746, z: 1.0621746}
+    - name: Robot_Model1:BP_Bolts
+      parentName: Robot_Model1:Back_Panel
+      position: {x: 0.000022750588, y: 0.0040653036, z: -0.005421481}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:BP_Bolt_1
+      parentName: Robot_Model1:BP_Bolts
+      position: {x: -0.02773466, y: 0.028854331, z: -0.0020533942}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.13385229, y: 0.13385229, z: 0.13385229}
+    - name: Robot_Model1:BP_Bolt_2
+      parentName: Robot_Model1:BP_Bolts
+      position: {x: -0.022496399, y: -0.028612003, z: 0.0018110513}
+      rotation: {x: -0.10131145, y: 0, z: -0, w: 0.99485475}
+      scale: {x: 0.13385229, y: 0.13385229, z: 0.13385229}
+    - name: Robot_Model1:BP_Bolt_3
+      parentName: Robot_Model1:BP_Bolts
+      position: {x: 0.022480257, y: -0.028612003, z: 0.0018110513}
+      rotation: {x: -0.10131145, y: 0, z: -0, w: 0.99485475}
+      scale: {x: 0.13385229, y: 0.13385229, z: 0.13385229}
+    - name: Robot_Model1:BP_Bolt_4
+      parentName: Robot_Model1:BP_Bolts
+      position: {x: 0.027734663, y: 0.028854331, z: -0.0020533942}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.13385229, y: 0.13385229, z: 0.13385229}
+    - name: Robot_Model1:B_Plugs_1
+      parentName: Robot_Model1:Back_Panel
+      position: {x: 4.210713e-34, y: -0.19110586, z: 0.049494322}
+      rotation: {x: -0.010329007, y: 0, z: -0, w: 0.99994665}
+      scale: {x: 0.85403407, y: 0.85403407, z: 0.85403407}
+    - name: Robot_Model1:Plug_end_6
+      parentName: Robot_Model1:B_Plugs_1
+      position: {x: 0.003796884, y: 0.21086156, z: -0.061093926}
+      rotation: {x: -0.75070924, y: 0, z: -0, w: 0.6606328}
+      scale: {x: 1.5882903, y: 1.5882903, z: 1.5882903}
+    - name: Robot_Model1:Plug_end_7
+      parentName: Robot_Model1:B_Plugs_1
+      position: {x: 0.012653534, y: 0.21086156, z: -0.061093926}
+      rotation: {x: -0.75070924, y: 0, z: -0, w: 0.6606328}
+      scale: {x: 1.5882903, y: 1.5882903, z: 1.5882903}
+    - name: Robot_Model1:Plug_end_8
+      parentName: Robot_Model1:B_Plugs_1
+      position: {x: 0.021563089, y: 0.21086156, z: -0.061093926}
+      rotation: {x: -0.75070924, y: 0, z: -0, w: 0.6606328}
+      scale: {x: 1.5882903, y: 1.5882903, z: 1.5882903}
+    - name: Robot_Model1:Cable_1
+      parentName: Robot_Model1:Back_Panel
+      position: {x: 4.210713e-34, y: -0.19110586, z: 0.049494322}
+      rotation: {x: -0.010329007, y: 0, z: -0, w: 0.99994665}
+      scale: {x: 0.85403407, y: 0.85403407, z: 0.85403407}
+    - name: Robot_Model1:extrudedSurface2
+      parentName: Robot_Model1:Cable_1
+      position: {x: 0.004779793, y: 0.292872, z: -0.058921974}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Plug_end_2
+      parentName: Robot_Model1:Cable_1
+      position: {x: -0.01871141, y: 0.24742481, z: -0.06299681}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1.5882903, y: 1.5882903, z: 1.5882903}
+    - name: Robot_Model1:Plug_3
+      parentName: Robot_Model1:Plug_end_2
+      position: {x: 0.000004945993, y: 0.0013630295, z: 0.000021858215}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 0.6296078, y: 0.6296078, z: 0.8543199}
+    - name: Robot_Model1:Cable_2
+      parentName: Robot_Model1:Back_Panel
+      position: {x: -0.0016697656, y: 0.053131618, z: -0.008887048}
+      rotation: {x: -0.010329007, y: 0, z: -0, w: 0.99994665}
+      scale: {x: 0.85403407, y: 0.85403407, z: 0.85403407}
+    - name: Robot_Model1:extrudedSurface1
+      parentName: Robot_Model1:Cable_2
+      position: {x: 0.000020326128, y: 0.00005573588, z: -0.00060654123}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Plug_end_3
+      parentName: Robot_Model1:Cable_2
+      position: {x: -0.016756259, y: -0.05092493, z: -0.00055934605}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1.5882903, y: 1.5882903, z: 1.5882903}
+    - name: Robot_Model1:Plug_4
+      parentName: Robot_Model1:Plug_end_3
+      position: {x: 0.000004945993, y: 0.0013630295, z: 0.000009555816}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 0.6296078, y: 0.6296078, z: 0.8543199}
+    - name: Robot_Model1:Antenna_Base
+      parentName: Robot_Model1:Back_Panel
+      position: {x: 0.025542866, y: 0.035905, z: -0.0016774845}
+      rotation: {x: -0.010329007, y: 0, z: -0, w: 0.99994665}
+      scale: {x: 1.356454, y: 2.6152234, z: 1.356454}
+    - name: Robot_Model1:Antenna
+      parentName: Robot_Model1:Antenna_Base
+      position: {x: 0.0004239583, y: 0.014079971, z: -0.006406382}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.6296078, y: 0.32656255, z: 0.6296078}
+    - name: Robot_Model1:Antenna_tip
+      parentName: Robot_Model1:Antenna
+      position: {x: 0.002695186, y: 0.036941357, z: -0.011372085}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.09603641, y: 0.09603641, z: 0.09603641}
+    - name: Robot_Model1:F_Plugs_1
+      parentName: Robot_Model1:Torso
+      position: {x: -1.2085443e-17, y: -0.12527819, z: -0.0052872077}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9071333, y: 0.9071333, z: 0.9071333}
+    - name: Robot_Model1:Plug_end_10
+      parentName: Robot_Model1:F_Plugs_1
+      position: {x: -0.024360277, y: 0.21965511, z: 0.06656526}
+      rotation: {x: -0.04227015, y: 0.6681799, z: 0.7413857, w: 0.04578413}
+      scale: {x: 2.5, y: 2.5, z: 2.5}
+    - name: Robot_Model1:Plug_end_11
+      parentName: Robot_Model1:F_Plugs_1
+      position: {x: -0.024360277, y: 0.20293212, z: 0.06494224}
+      rotation: {x: -0.028415555, y: 0.6729776, z: 0.7384589, w: 0.031180412}
+      scale: {x: 2.5, y: 2.5, z: 2.5}
+    - name: Robot_Model1:Buttons
+      parentName: Robot_Model1:Torso
+      position: {x: -1.2085443e-17, y: -0.12527819, z: -0.0052872077}
+      rotation: {x: 0.7342882, y: 0.11782605, z: -0.62966883, w: 0.22462212}
+      scale: {x: 0.9071333, y: 0.9071333, z: 0.9071333}
+    - name: Robot_Model1:Button_1
+      parentName: Robot_Model1:Buttons
+      position: {x: 0.024568815, y: 0.18655048, z: 0.061845586}
+      rotation: {x: 0.029576931, y: 0.07135421, z: -0.0021167672, w: 0.9970102}
+      scale: {x: 1.4928473, y: 0.37191308, z: 0.15560757}
+    - name: Robot_Model1:Button_2
+      parentName: Robot_Model1:Buttons
+      position: {x: 0.024568815, y: 0.17756574, z: 0.0609711}
+      rotation: {x: 0.029576931, y: 0.07135421, z: -0.0021167672, w: 0.9970102}
+      scale: {x: 1.4928473, y: 0.37191308, z: 0.15560757}
+    - name: Robot_Model1:Button_3
+      parentName: Robot_Model1:Buttons
+      position: {x: 0.024568815, y: 0.16858177, z: 0.06019661}
+      rotation: {x: -0.7701293, y: -0.08437669, z: 0.57840115, w: 0.25540882}
+      scale: {x: 1.4928473, y: 0.37191308, z: 0.15560757}
+    - name: Robot_Model1:R_Arm_socket1
+      parentName: Robot_Model1:Torso
+      position: {x: 0.000111266454, y: 0.08663839, z: 0.0019038062}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 0.9071333, y: 0.9071333, z: -0.9071333}
+    - name: Robot_Model1:R_Arm
+      parentName: Robot_Model1:R_Arm_socket1
+      position: {x: 0.0750507, y: -0.0006781889, z: 0.00031331927}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:R_Hand_Joint
+      parentName: Robot_Model1:R_Arm
+      position: {x: 0.008371178, y: -0.1259725, z: 0.10977929}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:nurbsSphere1
+      parentName: Robot_Model1:R_Hand_Joint
+      position: {x: 0.007969221, y: 0.0039582555, z: 0.0009454052}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:nurbsSphere2
+      parentName: Robot_Model1:R_Hand_Joint
+      position: {x: -0.000062881016, y: -0.004084881, z: -0.0009236533}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:R_Hand
+      parentName: Robot_Model1:R_Hand_Joint
+      position: {x: 0.000033767752, y: -0.00016639182, z: 0.00098163}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.1466408, y: 1.1466408, z: 1.1466408}
+    - name: Robot_Model1:H_Clamp_2
+      parentName: Robot_Model1:R_Hand
+      position: {x: -0.000061288956, y: -0.00020667359, z: 0.00071593723}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:H_Clamp_1
+      parentName: Robot_Model1:R_Hand
+      position: {x: -0, y: -0.00022944741, z: 0.0010627063}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:R_Arm_socket
+      parentName: Robot_Model1:Torso
+      position: {x: 0.000111266454, y: 0.08663839, z: 0.0019038062}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9071333, y: 0.9071333, z: 0.9071333}
+    - name: Robot_Model1:R_Arm
+      parentName: Robot_Model1:R_Arm_socket
+      position: {x: 0.0750507, y: -0.0006781889, z: 0.00031331927}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:R_Hand_Joint
+      parentName: Robot_Model1:R_Arm
+      position: {x: 0.008371178, y: -0.1259725, z: 0.10977929}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:nurbsSphere1
+      parentName: Robot_Model1:R_Hand_Joint
+      position: {x: 0.007969221, y: 0.0039582555, z: 0.0009454052}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:nurbsSphere2
+      parentName: Robot_Model1:R_Hand_Joint
+      position: {x: -0.000062881016, y: -0.004084881, z: -0.0009236533}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:R_Hand
+      parentName: Robot_Model1:R_Hand_Joint
+      position: {x: 0.000033767752, y: -0.00016639182, z: 0.00098163}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.1466408, y: 1.1466408, z: 1.1466408}
+    - name: Robot_Model1:H_Clamp_2
+      parentName: Robot_Model1:R_Hand
+      position: {x: -0.000061589846, y: -0.00004276092, z: 0.0007256316}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:H_Clamp_1
+      parentName: Robot_Model1:R_Hand
+      position: {x: -0, y: 0.00006958226, z: -0.000026137785}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Base
+      parentName: pasted__Bot
+      position: {x: -0.0003255434, y: -0.073794164, z: -0.019855997}
+      rotation: {x: 0.5086185, y: -0.000000014901161, z: -0.58106893, w: 0.6353473}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Tube_1
+      parentName: Robot_Model1:Base
+      position: {x: -0.0000839943, y: -0.051929377, z: 0.046422776}
+      rotation: {x: 0.1518272, y: 0.1715297, z: 0.56375796, w: 0.7935383}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_1
+      parentName: Robot_Model1:Tube_1
+      position: {x: 0.07045949, y: -0.010927447, z: 0.021584906}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Inner_Rim_1
+      parentName: Robot_Model1:Wheel_1
+      position: {x: -0.0004048791, y: 0.0000000019911568, z: 0.000000007964627}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Outer_Rim_1
+      parentName: Robot_Model1:Wheel_1
+      position: {x: 0.028409801, y: 0.000000002330905, z: 0.000000010616349}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Weel_Wedges_1
+      parentName: Robot_Model1:Outer_Rim_1
+      position: {x: -0.015314922, y: -0.000000008304376, z: 0.0000000033217502}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_1
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_2
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_3
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_4
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_5
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 1.7763568e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_6
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 1.7763568e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_7
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 2.6645352e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_8
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 2.6645352e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_3
+      parentName: Robot_Model1:Tube_1
+      position: {x: -0.06780254, y: -0.010927447, z: 0.021584906}
+      rotation: {x: -0.07035429, y: 0.9896669, z: -0.00000009685753, w: -0.1249392}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Inner_Rim_1
+      parentName: Robot_Model1:Wheel_3
+      position: {x: 0.0014329986, y: 0.0000000019911568, z: 0.000000007964627}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Outer_Rim_1
+      parentName: Robot_Model1:Wheel_3
+      position: {x: 0.03024768, y: 0.000000002330905, z: 0.000000010616349}
+      rotation: {x: 0.000000104308114, y: 0.49064785, z: 0.8713142, w: 0.008726668}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Weel_Wedges_1
+      parentName: Robot_Model1:Outer_Rim_1
+      position: {x: -0.015314922, y: -0.000000008304376, z: 0.0000000033217502}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_1
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_2
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_3
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_4
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_5
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 1.7763568e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_6
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 1.7763568e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_7
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 2.6645352e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_8
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 2.6645352e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Tube_2
+      parentName: Robot_Model1:Base
+      position: {x: -0.0000839943, y: -0.051929377, z: -0.037891548}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_4
+      parentName: Robot_Model1:Tube_2
+      position: {x: 0.06780254, y: -0.010927447, z: 0.021530597}
+      rotation: {x: 0.0000003874302, y: -0.12117454, z: -0.036123738, w: 0.99197376}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Inner_Rim_1
+      parentName: Robot_Model1:Wheel_4
+      position: {x: 0.0014329986, y: 0.0000000019911568, z: 0.000000007964627}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Outer_Rim_1
+      parentName: Robot_Model1:Wheel_4
+      position: {x: 0.03024768, y: 0.000000002330905, z: 0.000000010616349}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Weel_Wedges_1
+      parentName: Robot_Model1:Outer_Rim_1
+      position: {x: -0.015314922, y: -0.000000008304376, z: 0.0000000033217502}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_1
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_2
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_3
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_4
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_5
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 1.7763568e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_6
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 1.7763568e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_7
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 2.6645352e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_8
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 2.6645352e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_2
+      parentName: Robot_Model1:Tube_2
+      position: {x: -0.07045949, y: -0.010927447, z: 0.021530598}
+      rotation: {x: 0.6707663, y: 0.7126707, z: 0.00000014901161, w: -0.20536105}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Inner_Rim_1
+      parentName: Robot_Model1:Wheel_2
+      position: {x: -0.0004048791, y: 0.0000000019911568, z: 0.000000007964627}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Outer_Rim_1
+      parentName: Robot_Model1:Wheel_2
+      position: {x: 0.028409801, y: 0.000000002330905, z: 0.000000010616349}
+      rotation: {x: -0.00000093877304, y: -0.29262182, z: -0.9562175, w: 0.0045308466}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Weel_Wedges_1
+      parentName: Robot_Model1:Outer_Rim_1
+      position: {x: -0.015314922, y: -0.000000008304376, z: 0.0000000033217502}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_1
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_2
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_3
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_4
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_5
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 1.7763568e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_6
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 1.7763568e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_7
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 2.6645352e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Wheel_Wedge_8
+      parentName: Robot_Model1:Weel_Wedges_1
+      position: {x: 0.012733486, y: 0.00001528637, z: 2.6645352e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Head_Support
+      parentName: pasted__Bot
+      position: {x: -0.0003255434, y: 0.07648282, z: -0.012503939}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Head
+      parentName: Robot_Model1:Head_Support
+      position: {x: 2.0872193e-16, y: 0.02581474, z: 0.0049661323}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Cam_Socket_1
+      parentName: Robot_Model1:Head
+      position: {x: -0.023441682, y: 0.039469074, z: 0.03055509}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Eye_Cam_1
+      parentName: Robot_Model1:Cam_Socket_1
+      position: {x: -8.881784e-18, y: -0.00007367145, z: 0.037212666}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Cam_Lens_1
+      parentName: Robot_Model1:Eye_Cam_1
+      position: {x: -0, y: -0.000012413898, z: 0.017946726}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Cam_Socket_2
+      parentName: Robot_Model1:Head
+      position: {x: 0.023441682, y: 0.039469074, z: 0.03055509}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Eye_Cam_1
+      parentName: Robot_Model1:Cam_Socket_2
+      position: {x: -8.881784e-18, y: -0.00007367145, z: 0.037212666}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Cam_Lens_1
+      parentName: Robot_Model1:Eye_Cam_1
+      position: {x: -0, y: -0.000012413898, z: 0.017946726}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Robot_Model1:Neck_Joint
+      parentName: Robot_Model1:Head
+      position: {x: -1.3996583e-17, y: 0.0017759704, z: 0.00027495145}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.1517501, y: 0.7443846, z: 0.9071047}
+    - name: Robot_Model1:Plug_end_5
+      parentName: Robot_Model1:Head
+      position: {x: 0.014801108, y: 0.044081878, z: -0.06197414}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1.5882903, y: 1.5882903, z: 1.5882903}
+    - name: Robot_Model1:Plug_1
+      parentName: Robot_Model1:Plug_end_5
+      position: {x: -0.00001870036, y: 0.0014785003, z: -0.000027256012}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 0.6296078, y: 0.6296078, z: 0.8543199}
+    - name: Robot_Model1:Plug_end_4
+      parentName: Robot_Model1:Head
+      position: {x: 0.026601274, y: 0.044081878, z: -0.06197414}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1.5882903, y: 1.5882903, z: 1.5882903}
+    - name: Robot_Model1:Plug_2
+      parentName: Robot_Model1:Plug_end_4
+      position: {x: -0.000017116665, y: 0.0014785003, z: -0.000027256012}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 0.6296078, y: 0.6296078, z: 0.8543199}
+    - name: Robot_Model1:Wheels_Plus
+      parentName: pasted__Bot
+      position: {x: -0, y: -0.136651, z: -0.01556323}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

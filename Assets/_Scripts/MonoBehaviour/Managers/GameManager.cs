@@ -15,6 +15,8 @@ public class GameManager : StaticInstance<GameManager>
 
     public Material activeMat;
     public Material disactiveMat;
+    public Material WaterdMat;
+
     public GameManager playerPosission;
     public GameObject Watter;
     public GameObject Base;
@@ -59,14 +61,17 @@ public class GameManager : StaticInstance<GameManager>
 
     public void GoPlante(Seed seed, Tile tile, Transform transformm)
     {
-        
+
 
     }
 
     void ChangeColor(GameObject unit, Material material)
     {
+        foreach (var item in unit.GetComponentsInChildren<Renderer>())
+        {
+            item.material = material;
+        }
 
-        unit.GetComponent<Renderer>().material = material;
     }
     public void EndGame()
     {

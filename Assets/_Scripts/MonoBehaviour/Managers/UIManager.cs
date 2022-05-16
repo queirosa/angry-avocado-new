@@ -24,6 +24,9 @@ public class UIManager : StaticInstance<UIManager>
     public TextMeshProUGUI FruitCount;
     public TextMeshProUGUI JungleCount;
 
+    public TextMeshProUGUI WorkingText;
+
+
     public Button ConiferButton;
     public Button FlowerButton;
     public Button FruitButton;
@@ -31,6 +34,13 @@ public class UIManager : StaticInstance<UIManager>
 
     private float currentRate;
     PlayerStats playerStats;
+
+    public GameObject ActionPanel;
+    public GameObject WatterSubActionPanel;
+    public GameObject GrowSubActionPanel;
+
+    public GameObject WorkingPanel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,12 +69,39 @@ public class UIManager : StaticInstance<UIManager>
         fertilityText.text = playerStats.fertility.ToString();
         oxygenText.text = playerStats.oxygen.ToString();
         yearsText.text = playerStats.years.ToString();
+        if (GameManager.Instance.currentDrone != null)
+        {
+            var drone = GameManager.Instance.currentDrone.GetComponent<Drone>().drone;
+            switch (drone.currentJob)
+            {
+                case CurrentJob.Idle:
+                    WorkingText.text = "Idel";
+                    break;
+                case CurrentJob.GatheringWater:
+                    WorkingText.text = "Gathering Water : " + drone.currentWater;
+                    break;
+                case CurrentJob.Plante:
+                    break;
+                case CurrentJob.Harvesed:
+                    break;
+            }
+        }
+
         CalculateYearLeft();
         if (GameManager.Instance.PlayerStats.years == 0)
         {
             GameManager.Instance.EndGame();
         }
     }
+
+    public void ActiveWorkingPanle()
+    {
+        ActionPanel.SetActive(false);
+        WatterSubActionPanel.SetActive(false);
+        GrowSubActionPanel.SetActive(false);
+        WorkingPanel.SetActive(true);
+    }
+
     public void Sleep()
     {
         GameManager.Instance.Sleep();
@@ -108,12 +145,36 @@ public class UIManager : StaticInstance<UIManager>
     public void SelectDrone(GameObject drone)
     {
         GameManager.Instance.SelectDrone(drone);
+
+        Debug.Log("Working :" + drone.GetComponent<Drone>().drone.isWorking);
+        if (drone.GetComponent<Drone>().drone.isWorking)
+        {
+            ActionPanel.SetActive(false);
+            WatterSubActionPanel.SetActive(false);
+            GrowSubActionPanel.SetActive(false);
+            WorkingPanel.SetActive(true);
+        }
+        else
+        {
+            ActionPanel.SetActive(true);
+            WatterSubActionPanel.SetActive(false);
+            GrowSubActionPanel.SetActive(false);
+            WorkingPanel.SetActive(false);
+        }
     }
     public void GetWater(int amount)
     {
         if (GameManager.Instance.currentDrone != null)
         {
-            GameManager.Instance.currentDrone.GetComponent<Drone>().drone.maxAmountOfWater = amount;
+            var drone = GameManager.Instance.currentDrone.GetComponent<Drone>().drone;
+            drone.maxAmountOfWater = amount;
+            drone.isWorking = true;
+            drone.currentJob = CurrentJob.GatheringWater;
+            drone.WorkingText = "Gathering Water : " + drone.currentWater;
+            ActionPanel.SetActive(false);
+            WatterSubActionPanel.SetActive(false);
+            GrowSubActionPanel.SetActive(false);
+            WorkingPanel.SetActive(true);
             GameManager.Instance.currentDrone.GetComponent<NavMeshAgent>().SetDestination(GameManager.Instance.Watter.transform.position);
         }
     }

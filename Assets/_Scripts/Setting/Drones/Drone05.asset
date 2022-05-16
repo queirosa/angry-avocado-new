@@ -16,3 +16,6 @@ MonoBehaviour:
   currentWater: 0
   waterPerYear: 100
   maxAmountOfWater: 1000
+  isWorking: 0
+  WorkingText: 
+  currentJob: 0

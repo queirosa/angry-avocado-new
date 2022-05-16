@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3941340321005533126}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: jungle3
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 5531159397987736440}
   - component: {fileID: 3158357773268199229}
   - component: {fileID: 2096170434344306202}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: jungle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

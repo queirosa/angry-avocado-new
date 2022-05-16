@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2312249339796222375}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fruit3butwithfruit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1941284370125376536}
   - component: {fileID: 7270437345849616436}
   - component: {fileID: 4705377558742853398}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fruit3butwithfruit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

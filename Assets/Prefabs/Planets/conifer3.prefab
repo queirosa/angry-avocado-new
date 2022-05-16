@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 690981687919698983}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: conifer3
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8868862650031743793}
   - component: {fileID: 2896188499757544003}
   - component: {fileID: 2276544037387881867}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: conifer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
