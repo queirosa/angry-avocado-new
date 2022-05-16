@@ -13,11 +13,18 @@ MonoBehaviour:
   m_Name: FruitSeed
   m_EditorClassIdentifier: 
   seedName: Fruit
-  Quantity: 4
+  Quantity: 9
   seedPrefab: {fileID: 1365248280269417057, guid: e1ecac75ff3c79f40a1dd8a23001105a, type: 3}
   seedType: 3
-  timeSpan: 0
-  watterNeed: 0
-  oxygenPreduce: 0
-  fertility: 0
-  materials: 0
+  timeSpan: 12
+  watterNeed: 200
+  oxygenPreduce: 30
+  fertilityNeeded: 3
+  materialsPreduce: 5
+  fertilityPreduce: 2
+  seedPreduce: 2
+  phases:
+  - {fileID: 1365248280269417057, guid: e1ecac75ff3c79f40a1dd8a23001105a, type: 3}
+  - {fileID: 3904214907054188766, guid: f6d2cb3b8dc770e45976a8fae5dba42b, type: 3}
+  - {fileID: 4986909997343075730, guid: c39fbebfd547b3d4d949729ddaca60a8, type: 3}
+  - {fileID: 2312249339796222376, guid: dfd4f5da481f28849bcf3617bf843b56, type: 3}

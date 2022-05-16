@@ -8,8 +8,10 @@ public class Drone : MonoBehaviour
 {
     public DroneStats drone;
     private float currentRate;
+    NavMeshAgent agent;
     void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
         GameManager.Instance.drones.Add(this.gameObject);
     }
 
@@ -49,6 +51,7 @@ public class Drone : MonoBehaviour
             drone.currentWater = 0;
             drone.isWorking = false;
             drone.currentJob = CurrentJob.Idle;
+            agent.SetDestination(drone.startPostion);
             if (GameManager.Instance.currentDrone == this.gameObject)
             {
                 UIManager.Instance.ActiveActionPanle();
@@ -58,16 +61,15 @@ public class Drone : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Seed"))
+        if (other.gameObject.CompareTag("Seed") && drone.currentJob == CurrentJob.Plante)
         {
             Debug.Log("Seed");
             Seed seed = other.gameObject.GetComponent<PlanteController>().Seed;
             GameManager.Instance.PlayerStats.water -= seed.watterNeed;
-            GameManager.Instance.PlayerStats.fertility -= seed.fertility;
-            ////other.gameObject.GetComponentInParent<Renderer>().material = GameManager.Instance.WaterdMat;
+            GameManager.Instance.PlayerStats.fertility -= seed.fertilityNeeded;
+            other.gameObject.transform.parent.GetComponent<Renderer>().material = GameManager.Instance.WaterdMat;
             GameManager.Instance.GoToBase(this.gameObject);
-            //drone.isWorking = false;
-            //drone.currentJob = CurrentJob.Idle;
+
         }
     }
     //private void OnDestroy()

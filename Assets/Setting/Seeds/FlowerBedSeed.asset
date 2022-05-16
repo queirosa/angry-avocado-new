@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: FlowerBedSeed
   m_EditorClassIdentifier: 
   seedName: Flower Bed
-  Quantity: 4
+  Quantity: 5
   seedPrefab: {fileID: 4165922058971891998, guid: bde3e21e4783c65479d480cd17221ca2, type: 3}
   seedType: 2
-  timeSpan: 0
-  watterNeed: 0
-  oxygenPreduce: 0
-  fertility: 0
-  materials: 0
+  timeSpan: 10
+  watterNeed: 100
+  oxygenPreduce: 20
+  fertilityNeeded: 3
+  materialsPreduce: 0
+  fertilityPreduce: 3
+  seedPreduce: 5
+  phases:
+  - {fileID: 4165922058971891998, guid: bde3e21e4783c65479d480cd17221ca2, type: 3}

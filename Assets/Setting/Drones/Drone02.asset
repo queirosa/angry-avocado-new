@@ -18,4 +18,5 @@ MonoBehaviour:
   maxAmountOfWater: 1000
   isWorking: 0
   WorkingText: 
+  startPostion: {x: -4.41, y: 2, z: 40}
   currentJob: 0

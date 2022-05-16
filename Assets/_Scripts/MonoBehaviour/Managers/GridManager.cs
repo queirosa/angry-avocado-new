@@ -41,34 +41,34 @@ public class GridManager : StaticInstance<GridManager>
                         {
                             if (seed.Quantity > 0)
                             {
-                                //var dist = Vector3.Distance(GameManager.Instance.currentDrone.transform.position, transform.position);
-                                //Debug.Log(dist);
-                                GameManager.Instance.currentDrone.GetComponent<Drone>().drone.isWorking = true;
-                                GameManager.Instance.currentDrone.GetComponent<NavMeshAgent>().SetDestination(hit.collider.gameObject.transform.position);
-                                GameManager.Instance.PlayerStats.seedCount -= 1;
-                                seed.Quantity -= 1;
-                                GameObject Plant = Instantiate(seed.seedPrefab, hit.collider.gameObject.transform.position, Quaternion.identity);
-                                Plant.transform.parent = hit.collider.gameObject.transform;
-                                Tile.hasPlante = true;
-                                GameManager.Instance.currentDrone.GetComponent<Drone>().drone.currentJob = CurrentJob.Plante;
-                                GameManager.Instance.currentDrone.GetComponent<Drone>().drone.WorkingText = "Growing " + Plant.name;
-                                UIManager.Instance.ActiveWorkingPanle();
-                                CancleGrow();
+                                if (GameManager.Instance.PlayerStats.water >= seed.watterNeed && GameManager.Instance.PlayerStats.fertility > seed.fertilityNeeded)
+                                {
+                                    GameManager.Instance.currentDrone.GetComponent<Drone>().drone.isWorking = true;
+                                    GameManager.Instance.currentDrone.GetComponent<NavMeshAgent>().SetDestination(hit.collider.gameObject.transform.position);
+                                    GameManager.Instance.PlayerStats.seedCount -= 1;
+                                    seed.Quantity -= 1;
+                                    GameObject Plant = Instantiate(seed.seedPrefab, hit.collider.gameObject.transform.position, Quaternion.identity);
+                                    Plant.transform.parent = hit.collider.gameObject.transform;
+                                    Tile.hasPlante = true;
+                                    GameManager.Instance.currentDrone.GetComponent<Drone>().drone.currentJob = CurrentJob.Plante;
+                                    GameManager.Instance.currentDrone.GetComponent<Drone>().drone.WorkingText = "Growing " + seed.seedName;
+                                    UIManager.Instance.ActiveWorkingPanle();
+                                }
+                                CancleGrow(true);
                             }
-                            else CancleGrow();
+                            else CancleGrow(false);
                         }
                     }
                 }
                 else
                 {
-                    CancleGrow();
+                    CancleGrow(false);
                 }
             }
             else
             {
-                CancleGrow();
+                CancleGrow(false);
             }
-            // Clickable Object
         }
     }
     public void Grow(SeedType seedType)
@@ -80,13 +80,17 @@ public class GridManager : StaticInstance<GridManager>
             tile.tileObj.GetComponent<Renderer>().material = activeMat;
         }
     }
-    public void CancleGrow()
+    public void CancleGrow(bool finshed)
     {
         canGrow = false;
         currentType = SeedType.None;
         foreach (var tile in tiles.Where(c => !c.hasPlante))
         {
             tile.tileObj.GetComponent<Renderer>().material = disactiveMat;
+        }
+        if (!finshed)
+        {
+            UIManager.Instance.ActiveActionPanle();
         }
     }
 

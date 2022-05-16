@@ -14,6 +14,10 @@ public class PlayerStats : ScriptableObject
     public int maxYears;
     [Range(0, 10000)]
     public float yearRate;
+    [Range(0, 10000)]
+    public float sleepYearRate;
+    [Range(0, 10000)]
+    public float walkUpYearRate;
 
     [Header("Water")]
     [Range(0, 10000)]
@@ -46,6 +50,8 @@ public class PlayerStats : ScriptableObject
     [Range(0, 10000)]
     public int numberOfActiveDrones;
 
+    [Range(0, 10000)]
+    public int materials;
 
     private void OnEnable()
     {

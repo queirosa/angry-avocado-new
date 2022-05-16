@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: ConiferSeed
   m_EditorClassIdentifier: 
   seedName: Conifer
-  Quantity: 4
+  Quantity: 2
   seedPrefab: {fileID: 6538109788860504988, guid: 99ce23e0f610c024b8082bd4d6b6d901, type: 3}
   seedType: 1
-  timeSpan: 0
-  watterNeed: 0
-  oxygenPreduce: 0
-  fertility: 0
-  materials: 0
+  timeSpan: 4
+  watterNeed: 50
+  oxygenPreduce: 30
+  fertilityNeeded: 5
+  materialsPreduce: 0
+  fertilityPreduce: 10
+  seedPreduce: 4
+  phases:
+  - {fileID: 6538109788860504988, guid: 99ce23e0f610c024b8082bd4d6b6d901, type: 3}
+  - {fileID: 690981687919698982, guid: 1d4a5ba9a0501924bb527b66e5da8fc0, type: 3}

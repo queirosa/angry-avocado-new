@@ -13,11 +13,17 @@ MonoBehaviour:
   m_Name: JungleSeed
   m_EditorClassIdentifier: 
   seedName: Jungle
-  Quantity: 4
+  Quantity: 5
   seedPrefab: {fileID: 6534870569447508753, guid: 9b1675cefcd98b4428b0840663067090, type: 3}
   seedType: 4
-  timeSpan: 0
-  watterNeed: 0
-  oxygenPreduce: 0
-  fertility: 0
-  materials: 0
+  timeSpan: 90
+  watterNeed: 50
+  oxygenPreduce: 150
+  fertilityNeeded: 2
+  materialsPreduce: 0
+  fertilityPreduce: 3
+  seedPreduce: 2
+  phases:
+  - {fileID: 6534870569447508753, guid: 9b1675cefcd98b4428b0840663067090, type: 3}
+  - {fileID: 3769490854813445550, guid: eecc26af91d743244a537c19c858d2b9, type: 3}
+  - {fileID: 3941340321005533127, guid: ab89f08b5ce0a9945a21e16c57fc7686, type: 3}

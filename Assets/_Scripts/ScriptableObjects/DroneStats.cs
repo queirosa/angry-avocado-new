@@ -11,6 +11,7 @@ public class DroneStats : ScriptableObject
     public int maxAmountOfWater = 1000;
     public bool isWorking = false;
     public string WorkingText = "";
+    public Vector3 startPostion;
     public CurrentJob currentJob = CurrentJob.Idle;
 }
 

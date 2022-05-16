@@ -11,6 +11,9 @@ public class Seed : ScriptableObject
     public int timeSpan;
     public int watterNeed;
     public int oxygenPreduce;
-    public int fertility;
-    public int materials;
+    public int fertilityNeeded;
+    public int materialsPreduce;
+    public int fertilityPreduce;
+    public int seedPreduce;
+    public List<GameObject> phases;
 }

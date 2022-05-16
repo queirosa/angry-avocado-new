@@ -42,10 +42,12 @@ public class GameManager : StaticInstance<GameManager>
     public void Sleep()
     {
         Player.GetComponent<NavMeshAgent>().SetDestination(Base.transform.position);
+        PlayerStats.yearRate = PlayerStats.sleepYearRate;
     }
     public void WalkUp()
     {
         Player.GetComponent<NavMeshAgent>().SetDestination(playerPosission.transform.position);
+        PlayerStats.yearRate = PlayerStats.walkUpYearRate;
     }
     public void GoToBase(GameObject gameObject)
     {
