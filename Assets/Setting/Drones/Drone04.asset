@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f15508785d3cd7843aa28cd07b921543, type: 3}
-  m_Name: Drone02
+  m_Name: Drone04
   m_EditorClassIdentifier: 
   Effectiveness: 1
-  currentWater: 10000
+  currentWater: 0
   waterPerYear: 100
   maxAmountOfWater: 10000
-  isWorking: 1
-  WorkingText: 'Gathering Water : 3000'
-  currentJob: 1
+  isWorking: 0
+  WorkingText: 
+  currentJob: 0

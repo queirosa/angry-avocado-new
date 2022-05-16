@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3941340321005533126}
+  - component: {fileID: 6924492559866425071}
   m_Layer: 7
   m_Name: jungle3
   m_TagString: Planet
@@ -32,6 +33,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &6924492559866425071
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941340321005533127}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 8.643203
+  m_Height: 17.286406
+  m_Direction: 1
+  m_Center: {x: 0, y: 6.278949, z: -0.1685381}
 --- !u!1 &6118130879531016391
 GameObject:
   m_ObjectHideFlags: 0

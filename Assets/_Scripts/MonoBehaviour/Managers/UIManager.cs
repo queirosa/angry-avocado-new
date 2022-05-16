@@ -81,8 +81,10 @@ public class UIManager : StaticInstance<UIManager>
                     WorkingText.text = "Gathering Water : " + drone.currentWater;
                     break;
                 case CurrentJob.Plante:
+                    WorkingText.text = drone.WorkingText;
                     break;
                 case CurrentJob.Harvesed:
+                    WorkingText.text = drone.WorkingText;
                     break;
             }
         }
@@ -101,7 +103,13 @@ public class UIManager : StaticInstance<UIManager>
         GrowSubActionPanel.SetActive(false);
         WorkingPanel.SetActive(true);
     }
-
+    public void ActiveActionPanle()
+    {
+        ActionPanel.SetActive(true);
+        WatterSubActionPanel.SetActive(false);
+        GrowSubActionPanel.SetActive(false);
+        WorkingPanel.SetActive(false);
+    }
     public void Sleep()
     {
         GameManager.Instance.Sleep();

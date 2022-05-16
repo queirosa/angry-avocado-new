@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6538109788860504991}
   - component: {fileID: -3243403871922608276}
+  - component: {fileID: 601847147014073935}
   m_Layer: 7
   m_Name: conifer2
   m_TagString: Seed
@@ -130,3 +131,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Seed: {fileID: 11400000, guid: 38c6c10c2e6ef0647ad777a6eac5ce13, type: 2}
+--- !u!136 &601847147014073935
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6538109788860504988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.1322507
+  m_Height: 3.5893517
+  m_Direction: 1
+  m_Center: {x: 0.39812076, y: 1.2946758, z: 0.23412979}

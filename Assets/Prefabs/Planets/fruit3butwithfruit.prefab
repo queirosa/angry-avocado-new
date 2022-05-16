@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2312249339796222375}
+  - component: {fileID: 4835024317570315316}
   m_Layer: 7
   m_Name: fruit3butwithfruit
-  m_TagString: Untagged
+  m_TagString: PlanteFruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +33,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4835024317570315316
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2312249339796222376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 3.0657363
+  m_Height: 6.5277114
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.7638557, z: 0.06447649}
 --- !u!1 &6534730749247744479
 GameObject:
   m_ObjectHideFlags: 0

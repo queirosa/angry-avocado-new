@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1365248280269417058}
   - component: {fileID: -4729823018642215416}
+  - component: {fileID: 7988868063045854132}
   m_Layer: 7
   m_Name: fruit1
   m_TagString: Seed
@@ -46,6 +47,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Seed: {fileID: 11400000, guid: cc06395853db92c4b91ac205eaa07e3c, type: 2}
+--- !u!136 &7988868063045854132
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365248280269417057}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.4666471
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.23332357, z: 0}
 --- !u!1 &6073306287766080195
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4165922058971891999}
   - component: {fileID: 3220650141203925471}
+  - component: {fileID: 7658721210141618370}
   m_Layer: 7
   m_Name: FlowerBed
   m_TagString: Seed
@@ -46,6 +47,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Seed: {fileID: 11400000, guid: 6592409931e562f418c5601d39d0ba24, type: 2}
+--- !u!135 &7658721210141618370
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4165922058971891998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.0435776
+  m_Center: {x: 0.3046857, y: 0, z: 0.2388916}
 --- !u!1 &4341669782471810319
 GameObject:
   m_ObjectHideFlags: 0

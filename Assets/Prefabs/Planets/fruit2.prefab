@@ -93,6 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3904214907054188767}
+  - component: {fileID: 4347500910882310369}
   m_Layer: 7
   m_Name: fruit2
   m_TagString: Planet
@@ -116,3 +117,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4347500910882310369
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3904214907054188766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.7513328
+  m_Height: 2.7373211
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.86866057, z: 0.075472414}
