@@ -113,7 +113,7 @@ public class PlayerStats : ScriptableObject
             item.Quantity = 5;
         }
         oxygen = 100;
-        fertility = 5;
+        fertility = 100;
         numberOfDrones = 5;
     }
 
