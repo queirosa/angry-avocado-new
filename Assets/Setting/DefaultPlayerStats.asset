@@ -12,23 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35244ef027ca8a641837c2cbffb092e3, type: 3}
   m_Name: DefaultPlayerStats
   m_EditorClassIdentifier: 
-  years: 489
+  years: 986
   maxYears: 1000
   yearRate: 2
   sleepYearRate: 1
   walkUpYearRate: 2
-  water: 9350
+  water: 1000
+  minWatter: 1000
   maxWater: 10000
-  seedCount: 21
+  seedCount: 20
   maxSeedCount: 1000
   avalibleSeeds:
   - {fileID: 11400000, guid: 38c6c10c2e6ef0647ad777a6eac5ce13, type: 2}
   - {fileID: 11400000, guid: 6592409931e562f418c5601d39d0ba24, type: 2}
   - {fileID: 11400000, guid: cc06395853db92c4b91ac205eaa07e3c, type: 2}
   - {fileID: 11400000, guid: 74106b2f69c792d478c0003829ea37d1, type: 2}
-  oxygen: 116
+  oxygen: 99
   maxOxygen: 1000
-  fertility: 426
+  oxygenRate: 30
+  fertility: 5
   maxFertility: 1000
   numberOfDrones: 5
   numberOfActiveDrones: 5

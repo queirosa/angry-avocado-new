@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,17 @@ public class DroneStats : ScriptableObject
     public string WorkingText = "";
     public Vector3 startPostion;
     public CurrentJob currentJob = CurrentJob.Idle;
+
+    public void Reset()
+    {
+        Effectiveness = 1;
+        currentWater = 0;
+        waterPerYear = 100;
+        maxAmountOfWater = 100;
+        isWorking = false;
+        WorkingText = "";
+        currentJob = CurrentJob.Idle;
+    }
 }
 
 [System.Serializable]

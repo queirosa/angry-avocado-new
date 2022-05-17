@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,8 @@ public class PlayerStats : ScriptableObject
     [Header("Water")]
     [Range(0, 10000)]
     public int water;
+
+    public int minWatter = 1000;
     [Range(0, 10000)]
     public int maxWater;
 
@@ -38,6 +41,9 @@ public class PlayerStats : ScriptableObject
     [Range(0, 10000)]
     public int maxOxygen;
 
+    [Range(0, 10000)]
+    public float oxygenRate;
+
     [Header("Fertility")]
     [Range(0, 10000)]
     public int fertility;
@@ -52,10 +58,12 @@ public class PlayerStats : ScriptableObject
 
     [Range(0, 10000)]
     public int materials;
+    internal Vector3 startPostion;
 
     private void OnEnable()
     {
         seedCount = avalibleSeeds.Sum(x => x.Quantity);
+        Reset();
     }
 
     public void AddYears(int yearsToAdd)
@@ -92,6 +100,21 @@ public class PlayerStats : ScriptableObject
         {
             oxygen = maxOxygen;
         }
+    }
+
+    public void Reset()
+    {
+        years = 1000;
+        yearRate = walkUpYearRate;
+        water = minWatter;
+        seedCount = 20;
+        foreach (var item in avalibleSeeds)
+        {
+            item.Quantity = 5;
+        }
+        oxygen = 100;
+        fertility = 5;
+        numberOfDrones = 5;
     }
 
     public void AddFertility(int fertilityToAdd)

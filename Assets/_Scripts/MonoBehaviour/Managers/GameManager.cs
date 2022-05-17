@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class GameManager : StaticInstance<GameManager>
 {
@@ -20,16 +19,34 @@ public class GameManager : StaticInstance<GameManager>
     public GameManager playerPosission;
     public GameObject Watter;
     public GameObject Base;
-
+    float currentRate;
     // Start is called before the first frame update
     void Start()
     {
-
+        currentRate= PlayerStats.oxygenRate;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (currentRate <= 0)
+        {
+            GameManager.Instance.PlayerStats.oxygen -= 1;
+            currentRate = PlayerStats.oxygenRate;
+        }
+        else
+            currentRate -= 1 * Time.deltaTime;
+
+        if (PlayerStats.oxygen == PlayerStats.maxOxygen)
+        {
+            Time.timeScale = 0;
+            UIManager.Instance.ShowWinCanves();
+        }
+        if (PlayerStats.oxygen == 0)
+        {
+            Time.timeScale = 0;
+            UIManager.Instance.ShowGameOverCanves();
+        }
 
     }
     public void SelectDrone(GameObject drone)
@@ -61,9 +78,16 @@ public class GameManager : StaticInstance<GameManager>
         }
     }
 
-    public void GoPlante(Seed seed, Tile tile, Transform transformm)
+    public void PLayAgain()
     {
-
+        Player.transform.position = PlayerStats.startPostion;
+        PlayerStats.Reset();
+        foreach (var drone in drones)
+        {
+            var droneStats = drone.GetComponent<Drone>().drone;
+            drone.transform.position = droneStats.startPostion;
+            droneStats.Reset();
+        }
 
     }
 
@@ -77,6 +101,7 @@ public class GameManager : StaticInstance<GameManager>
     }
     public void EndGame()
     {
-        Debug.Log("Game has ended");
+        Time.timeScale = 0;
+        UIManager.Instance.ShowGameOverCanves();
     }
 }

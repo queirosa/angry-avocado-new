@@ -41,6 +41,9 @@ public class UIManager : StaticInstance<UIManager>
 
     public GameObject WorkingPanel;
 
+    public Canvas GameOverCanves;
+    public Canvas WinCanves;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -96,6 +99,14 @@ public class UIManager : StaticInstance<UIManager>
         }
     }
 
+    public void ShowGameOverCanves()
+    {
+        GameOverCanves.gameObject.SetActive(true);
+    }
+    public void ShowWinCanves()
+    {
+        WinCanves.gameObject.SetActive(true);
+    }
     public void ActiveWorkingPanle()
     {
         ActionPanel.SetActive(false);
@@ -185,5 +196,12 @@ public class UIManager : StaticInstance<UIManager>
             WorkingPanel.SetActive(true);
             GameManager.Instance.currentDrone.GetComponent<NavMeshAgent>().SetDestination(GameManager.Instance.Watter.transform.position);
         }
+    }
+    public void PlayAgain()
+    {
+        GameOverCanves.gameObject.SetActive(false);
+        WinCanves.gameObject.SetActive(false);
+        Time.timeScale = 1;
+        GameManager.Instance.PLayAgain();
     }
 }
